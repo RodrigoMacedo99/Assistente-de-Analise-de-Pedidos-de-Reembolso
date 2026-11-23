@@ -1,0 +1,27 @@
+versao: "0.1.0"
+
+arrependimento:
+  online_dias: 7
+  loja_fisica_dias: 7
+  loja_fisica_exige_embalagem_original: true
+
+defeito:
+  prazo_reparo_dias: 30
+
+categorias:
+
+  eletronicos:
+    garantia_total_dias: 90        # só o mínimo legal
+    teto_aprovacao_automatica: "2500.00"
+    
+  eletrodomesticos:
+    garantia_total_dias: 365
+    teto_aprovacao_automatica: "5000.00"
+
+  moveis:
+    garantia_total_dias: 1095
+    teto_aprovacao_automatica: "8000.00"
+
+valor_maximo_reembolsavel: "15000.00"
+produtos_essenciais: [geladeira, fogao, maquina_de_lavar]
+condicoes_excluidas: [venda_no_estado, personalizado, sob_medida]
