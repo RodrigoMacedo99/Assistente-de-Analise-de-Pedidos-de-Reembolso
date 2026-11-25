@@ -1,42 +1,40 @@
-[tool.poetry]
-name = "repo-petrobahia"
+[project]
+name = "ml-skills-reembolso"
 version = "0.1.0"
-description = ""
-authors = ["RodrigoMacedo99 <104858896+RodrigoMacedo99@users.noreply.github.com>"]
+description = "Base de projeto para machine learning e agentes de IA"
 readme = "README.md"
-package-mode = false
-
-[tool.poetry.dependencies]
-python = ">=3.13"
-flake8 = "^7.3.0"
-isort = "^7.0.0"
-pre-commit = "^4.4.0"
-black = "^25.11.0"
-pydantic = "^2.12.4"
-pytest = "^9.0.1"
-pytest-html = "^4.1.1"
-pytest-cov = "^7.0.0"
-pytest-mock = "^3.15.1"
-
-[tool.poetry.group.dev.dependencies]
-flake8 = "^7.3.0"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "pandas>=3.1.1",
+    "pydantic>=2.14.4",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "torch>=2.15.0",
+]
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
 
-[tool.poetry.scripts]
-lint = "flake8"
-format = "isort . && black ."
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
 
-[tool.flake8]
-max-line-length = 88
-
-[tool.isort]
-profile = "black"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-python_files = "test_*.py"
-python_classes = "Test*"
-python_functions = "test_*"
-addopts = "--cov=src --cov-report=term-missing --cov-report=html --html=reports/test_report.html --self-contained-html -v"
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
