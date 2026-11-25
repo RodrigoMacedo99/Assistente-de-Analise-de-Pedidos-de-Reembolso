@@ -1,0 +1,76 @@
+{
+  "pedidos": [
+    {
+      "id": "PED-Q1-01",
+      "data_entrega": "2026-01-10",
+      "categoria": "eletronicos",
+      "valor": "1000.00",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-02",
+      "data_entrega": "2026-01-07",
+      "categoria": "eletronicos",
+      "valor": "1000.00",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-03",
+      "data_entrega": "2026-01-10",
+      "categoria": "alimentos",
+      "valor": "1000.00",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-04",
+      "data_entrega": "2026-01-10",
+      "categoria": "eletronicos",
+      "valor": "15000.01",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-05",
+      "data_entrega": "2026-01-07",
+      "categoria": "alimentos",
+      "valor": "1000.00",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-06",
+      "data_entrega": "2026-01-08",
+      "categoria": "eletronicos",
+      "valor": "1000.00",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-07",
+      "data_entrega": "2026-01-10",
+      "categoria": "eletronicos",
+      "valor": "2500.00",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-08",
+      "data_entrega": "2026-01-10",
+      "categoria": "eletronicos",
+      "valor": "2500.01",
+      "status": "entregue",
+      "data_solicitacao": "2026-01-15"
+    },
+    {
+      "id": "PED-Q1-09",
+      "data_entrega": "2026-01-10",
+      "categoria": "eletronicos",
+      "valor": "1000.00",
+      "status": "reembolsado",
+      "data_solicitacao": "2026-01-15"
+    }
+  ]
+}

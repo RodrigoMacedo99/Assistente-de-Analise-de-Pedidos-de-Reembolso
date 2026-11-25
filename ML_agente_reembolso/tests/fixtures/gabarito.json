@@ -1,0 +1,84 @@
+{
+  "casos": [
+    {
+      "cenario_id": "Q1-01",
+      "descricao": "Dentro do prazo, categoria elegivel e valor dentro dos limites",
+      "pedido_id": "PED-Q1-01",
+      "resultado_esperado": "aprovado",
+      "motivos_esperados": [],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-02",
+      "descricao": "Solicitacao fora do prazo",
+      "pedido_id": "PED-Q1-02",
+      "resultado_esperado": "recusado",
+      "motivos_esperados": ["prazo"],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-03",
+      "descricao": "Categoria nao elegivel",
+      "pedido_id": "PED-Q1-03",
+      "resultado_esperado": "recusado",
+      "motivos_esperados": ["categoria"],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-04",
+      "descricao": "Valor acima do maximo reembolsavel",
+      "pedido_id": "PED-Q1-04",
+      "resultado_esperado": "recusado",
+      "motivos_esperados": ["valor"],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-05",
+      "descricao": "Fora do prazo e categoria nao elegivel",
+      "pedido_id": "PED-Q1-05",
+      "resultado_esperado": "recusado",
+      "motivos_esperados": ["prazo", "categoria"],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-06",
+      "descricao": "Solicitacao no ultimo dia do prazo de sete dias",
+      "pedido_id": "PED-Q1-06",
+      "resultado_esperado": "aprovado",
+      "motivos_esperados": [],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-07",
+      "descricao": "Valor exatamente igual ao teto automatico da categoria",
+      "pedido_id": "PED-Q1-07",
+      "resultado_esperado": "aprovado",
+      "motivos_esperados": [],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-08",
+      "descricao": "Valor acima do teto automatico, mas abaixo do maximo reembolsavel",
+      "pedido_id": "PED-Q1-08",
+      "resultado_esperado": "revisao_humana",
+      "motivos_esperados": ["acima_teto_aprovacao_automatica"],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-09",
+      "descricao": "Pedido ja reembolsado",
+      "pedido_id": "PED-Q1-09",
+      "resultado_esperado": "recusado",
+      "motivos_esperados": ["duplicado"],
+      "deve_registrar_decisao": true
+    },
+    {
+      "cenario_id": "Q1-10",
+      "descricao": "Pedido inexistente",
+      "pedido_id": "PED-Q1-10-INEXISTENTE",
+      "resultado_esperado": "erro",
+      "motivos_esperados": ["pedido_inexistente"],
+      "deve_registrar_decisao": false
+    }
+  ]
+}
