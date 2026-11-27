@@ -17,6 +17,9 @@ dependencies = [
     "torch>=2.15.0",
 ]
 
+[project.scripts]
+ml-skills-reembolso = "ml_skills_reembolso.main:main"
+
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
